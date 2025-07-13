@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sonsuz Aşk</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; padding:50px;">
+  <h1>Bu site senin için sevgilim 💖</h1>
+  <p id="message">1. sayfadayız... ve seni çok seviyorum.</p>
+  <button onclick="nextPage()">Bir Sayfa Daha 💌</button>
+
+  <script>
+    let page = 1;
+    function nextPage() {
+      page++;
+      document.getElementById("message").innerText = 
+        `${page}. sayfadayız... ve seni hâlâ seviyorum.`;
+    }
+  </script>
+</body>
+</html>
